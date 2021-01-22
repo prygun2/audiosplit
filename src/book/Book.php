@@ -81,11 +81,12 @@ class Book
 
 		$result = [];
 		foreach ($this->chapters as $chapter) {
-			$result[] = new Segment($chapter->title, $chapter->start);
 			if (!empty($chapter->parts)) {
 				foreach ($chapter->parts as $part) {
 					$result[] = new Segment($part->title, $part->start);
 				}
+			} else {
+				$result[] = new Segment($chapter->title, $chapter->start);
 			}
 		}
 
@@ -120,6 +121,7 @@ class Book
 		$this->currentChapter++;
 		$title = "Chapter {$this->currentChapter}";
 		$chapter = new Chapter($title, $until);
+		$chapter->addPart($from, $until);
 		$this->chapters[$this->currentChapter] = $chapter;
 		if ($this->currentChapter > 1) {
 			$this->chapters[$this->currentChapter - 1]->setEnd($from);
