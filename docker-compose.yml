@@ -1,0 +1,15 @@
+version: "1"
+
+services:
+  app:
+    build:
+      args:
+        user: Veselov
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    container_name: audiobook
+    volumes:
+      - ./conf.d/php.ini:/usr/local/etc/php/php.ini
+      - ./:/var/www/html

@@ -1,0 +1,19 @@
+{
+    "name": "admin/audiobook",
+    "description": "Audiobook",
+    "authors": [
+        {
+            "name": "Denis Veselov",
+            "email": "veselov.denis@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-simplexml": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Book\\": "src/"
+        }
+    }
+}
