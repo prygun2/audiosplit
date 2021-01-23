@@ -8,8 +8,7 @@
     "authors": [
         {
             "name": "Denis Veselov",
-            "email": "veselov.denis@gmail.com",
-            "role": "Developer"
+            "email": "veselov.denis@gmail.com"
         }
     ],
     "require": {
