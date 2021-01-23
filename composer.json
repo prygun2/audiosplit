@@ -1,6 +1,6 @@
 {
-    "name": "admin/audiobook",
-    "description": "Audiobook",
+    "name": "prygun2/audiosplit",
+    "description": "Audiobook split",
     "authors": [
         {
             "name": "Denis Veselov",
