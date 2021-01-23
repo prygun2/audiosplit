@@ -1,10 +1,14 @@
 {
     "name": "prygun2/audiosplit",
     "description": "Audiobook split",
+    "version": "1.0.0",
+    "keywords": ["audiobook", "split", "xml", "json"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Denis Veselov",
-            "email": "veselov.denis@gmail.com"
+            "email": "veselov.denis@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
