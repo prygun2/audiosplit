@@ -45,17 +45,17 @@ class Book
 		}
 
 		$arr = simplexml_load_string($get);
-		if ($get === false) {
+		if ($arr === false) {
 			throw new Exception('SimpleXML error.');
 		}
 
 		$json = json_encode($arr);
-		if ($get === false) {
+		if ($json === false) {
 			throw new Exception('Get JSON error.');
 		}
 
 		$array = json_decode($json, TRUE);
-		if ($get === false) {
+		if ($array === false) {
 			throw new Exception('Get JSON error.');
 		}
 
